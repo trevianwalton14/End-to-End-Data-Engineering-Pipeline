@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueires.css">
+    
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Trevian Walton</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Trevian Walton</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#education" onclick="toggleMenu()">Education</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section_pic-container">
+            <img src="./headshot.jpg" alt="Trevian Walton Profile Pic" class="profile-pic"/>
+        </div>
+        <div class="section_text">
+        <p class="section_text_p1">Hello, I'm</p>
+        <h1 class="title">Trevian Walton</h1>
+        <p class="section_text_p2">I'm a Cloud Engineer</p>
+        <div class="btn-container">
+            <button
+                class="btn btn-color-2"
+                onclick="window.open('./Resume-Cloud.pdf')">
+            Download CV</button>
+            <button
+                class="btn btn-color-1"
+                onclick="location.href='./#contact'">
+            Contact Info</button>
+        </div>
+        <div id="socials-container">
+            <img 
+            src="./linkedinLogo.png" 
+            alt="My linkedin Profile" 
+            class="icon" 
+            onclick="location.href='https://www.linkedin.com/in/trevian-walton-136289237/'"
+            />
+            <img 
+            src="./github.png" 
+            alt="My github Profile" 
+            class="icon" 
+            onclick="location.href='https://github.com/trevianwalton14'"/>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section_text_p1">Get TO Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section_pic-container">
+                <img src="./headshot.jpg" 
+                src=""
+                alt="Profile Picture"
+                class="about-pic"
+                />
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img 
+                         src="./education-symbol.jpg" 
+                         alt="education-symbol"
+                         class="icon"
+                         />
+                         <h3>Education</h3>
+                         <p>University of the Cumberlands <br /> B.Sc Computer Information Systems</p>
+                    </div>
+                    <div class="details-container">
+                        <img
+                         src="./certificaition-image.png" 
+                         alt="certificaition-image"
+                         class="icon"
+                         />
+                         <h3>Certifications</h3>
+                         <p>AWS Certified Solutions Architect<br /> Comptia Network+</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>
+                        I'm a graduate from the University of the Cumberlands with a Bachelors of Science in Information Technology.
+                         In college I've obtained a strong foundational knowledge of Software Engineering and Computer Information Systems.
+                          I've expanded on that knowledge by achieving the CompTia Network+, as well as diving deep into cloud engineering by achieving the AWS Cloud Practioner and Solutions Architect Certification.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img src="./downarrow.png"
+        alt="arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#education'"
+        />
+    </section>
+    <section id="education">
+        <p class="section_text_p1"> Explore My</p>
+        <h1 class="title">Education</h1>
+        <div class="education-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="education-sub-title">University of the Cumberlands</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="check-symbol.jpg" 
+                            alt="check-symbol"
+                            class="icon" 
+                            />
+                            <div>
+                                <h3>B.Sc in Information Technology</h3>
+                                <p>Concentration: Computer Information Sytems, Software Engineering</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                    <div class="details-container">
+                    <h2 class="education-sub-title">Certifications</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="check-symbol.jpg" 
+                            alt="check-symbol"
+                            class="icon" 
+                            />
+                            <div>
+                                <h3>B.Sc in Information Technology</h3>
+                                <p>Concentration: Computer Information Sytems, Software Engineering</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img
+        src="./downarrow.png"
+        alt="downarrow"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+        />
+    </section>
+    <section id="projects">
+        <p class="section_text_p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="education-details-container">
+            <div class="about-containers">
+            <div class="details-container">
+                <div class="article-container">
+                    <img
+                    src="./project-portfolio.png"
+                    alt="project-portfolio"
+                    class="project-img"
+                    />
+                </div>
+                <h2 class="education-sub-title project-title"> This Portfolio</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn"
+                        onclick="location.href='https://github.com/trevianwalton14/portfolio-website'"
+                        >
+                        Github
+                    </button>
+                    <button class="btn btn-color-2 project-btn"
+                        onclick="location.href='https://github.com/'"
+                        >
+                        Description
+                    </button>
+                </div>
+            </div>
+             <div class="details-container">
+                <div class="article-container">
+                    <img
+                    src="./CICD-Pipeline.png"
+                    alt="CICD-Pipeline"
+                    class="project-img"
+                    />
+                </div>
+                <h2 class="education-sub-title project-title"> CICD-Pipeline</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn"
+                        onclick="location.href='https://github.com/trevianwalton14/CICD-Pipeline?tab=readme-ov-file'"
+                        >
+                        Github
+                    </button>
+                    <button class="btn btn-color-2 project-btn"
+                        onclick="location.href='https://app.diagrams.net/?tags=%7B%7D&lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=CICD%20Pipeline&dark=auto#R%3Cmxfile%20pages%3D%225%22%3E%3Cdiagram%20name%3D%22Page-1%22%20id%3D%22AiMyjcBlQRH93MUG0xyu%22%3E7VhRb9owEP41eSxyHAjwWCiwSV1VCW3TniqTmMSqE6eOA2G%2FfnZih7hJS9uhqptaVQJ%2Fvtxd7vt8tnG8eVKuOMribyzE1IEgLB3vyoHQBe5QfijkUCP%2BFNZAxElYQ%2BAIrMlvbJ7UaEFCnGushgRjVJDMBgOWpjgQFoY4Z3vbbMtoaAEZinAHWAeIdtGfJBRxjU5G4Ih%2FwSSKTWQX6JkEGWMN5DEK2b4FeQsH%2Bg70SuR4M0dh9r8354yJk2bGOCnnmKri23Vdvt1B8%2B4cp%2BJMPhfTm%2FhqV14f4uWv2cZ%2FWK7mNxc60A7RQpddl0wcDA%2BxSKj85spwO8wFkQxdow2mtywngrBUzm2YECyRBoiSSAGBTBtzCVBlOUPBfcRZkYZzRhmv3Hrb6q%2Fl9FI%2FK1gm0Vxwdt8QDxuk5QGACVgCNWP4VYMQ5TEO9UDOZOo1kjJSi2RAWD4eEKnYfFDkVYL6%2FWUOuHyy9u5LRPO4%2FCvMEiz4QY6155FekXpBetNRPd4f5e1rKG4p22BIL6iocfwqQUhbrYnzSmjUIyGfytxnWyYL2NaS%2F1AwM3GRVx3nUhrAcVZWmZh5%2BS1Sn2uhegQErvEo36F2Ws93tCpJFB2ppCzFfdrcEkof2fRo3cgyIWGowsz2MRF4naFAxdxLWUmsEnejuvfUlOtBS1TjYUdTrjfsimrkfmhR%2BR1RfVfr9ZNvDw5GFuFDH3QZB7DLuAc%2BNOPjDuM%2FbucdwvN7LIJY150VgpJU8m4OIAqUjT4ksupPM91HqOoq%2BgjkQjPWYfs2ErTPhwO1p2VVyK9BtQ92Z%2B92WdC3d03GU3fq94uyf0M0cqZ4W0le5k%2FS6LoaXXlA59wXwtoR31Wrvt2b3Em3OXnjnuYEx%2F6H1uq0o9UVEXGx%2BexP8rQCTrYnA%2F1D3clcip47KJ88HT%2FDpr3GG0n0Cqetk%2BoYPFssYV%2BP%2Bl1wPIiIuOM4U%2BkwWc53VsPI3qz%2BkyOv%2B4JrE07DS3ULVnRSlOcksBXQt0Rx2LkSn4%2BSVsnNHdo6EGqMY4oE2dl59PHwmlSOCd0yUl0KjPTg1G4X5jhrIuas4AHWT72C%2FBNxm%2FNvE%2FdR%2FxGIR1j8bVypAHRoec2Uv%2FwNDrWWGzrPvwIq2xM%2Fe5gsjj84eYs%2F%3C%2Fdiagram%3E%3Cdiagram%20name%3D%22Page%202%22%20id%3D%22OrOc9ZgoAe54ZaRRCo4O%22%3E7Zltc5s4EMc%2FjV%2FGw4MB%2B2X8lOtcruc7T68vPQrIoDFGVMixk09%2FK5AwstTSXNvUvUnqjqO%2FhLRof9pdyMCf7U93DJXZHzTB%2BcBzktPAnw88z3XcEXwJ5alRwonXCCkjSSM5Z2FNnrG6UqoHkuBKao3EKc05KXUxpkWBY65piDF61IdtaZ5oQolSbAjrGOWm%2BpEkPGvUceCc9d8wSTO1suvInj1Sg6VQZSihx47kLwZeOPD8Exr404HQ9I8%2FY5Ty3mFq8P40w7nYfLWvd399pMm7TyN3tdhs8f2Ks7i4aYxZfudZ211iuOCvvrok6hHlB%2Bk1ueP8Sbkx4%2FscfnNhuUfMOAEH36MHnK9oRTihBfQ9UM7pHgagnKRCiOFeMAMhFyOnKN6ljB6KZEZzyupp%2FW3905n0Vl7LaQlqxRndtdx4rdKZwXHGztIRPQoP0UhQleFENqCnFLexP6XijA0JraIhAeCr4aGqDZT3Dzbg0wW2PQ5xvwbES5%2FcYbrHnD1BWy4XyFMuD7k%2FCZr28XxkQillndOiNCQPadpO%2FCJKYKwE5fty5Vu4CnOwfbqlsKtdwMJPB6o6bqo6it3CAC8qT7Ulqh9%2BS8X3mou4AwPUjHAPzaRNvwEweJYb%2FBS0wDZgtyTPL8ZYDoBidU%2BSRCwzPWaE43WJYrHmEVgDrSa%2BRfGng%2Bb6nkZaNDJAc%2F2RSVrgXjVpI4O0D%2BJkv0FghcD3hoFGwSh0TAwcz8TAd64ag8DA4J%2FVzKCg2mEeZ9IZ9MBzUgAMqvwRIuSJhIArPu9%2Bm5dF%2FJEFmOuptlzWlofQsRoNRUos6yXfxXUaNXs3j2VsS33jaOJOQjup9nyqGM%2Fxtj4HYD8p0vu6NfcdabNtCS2h%2FnyAI0fjF%2BKYwa8fWcKYF4VXDXBoAHxHeHZ4eItkdhC8UAfBFsiU9AvFsai%2FIO%2Btwr%2FgYT0YtJhYYeqyU5fb08XSswWz5wPDw5TwDcOlMIfCbl4DIYGe6v4npfW4nxBcJLfiAV64OEdVRWKdCttRxonxNP%2BD3dRxg3onoNWdUmM4R5w86sbZfPMSU84GrSipH0gUo95EDyuqalYrVvTAYiyvegEQPeu2ZXa77kWc4oilmH%2FruoAFeurMWor5qv8woeS7decrnor3m%2BV8t37%2BczHHZORu49%2F%2Ffn8jX4988VRoxZ%2B8cegIpvCBy2fN%2FwCGzoQy9AKLaNMiU3TNYfDl2la4FG1aZIquOUy0lNW6aNOiwLT48mrXcrV7cTV8PlNLX1SU8G8JTjcSy2IeiVd%2FljK3fUek1aC9%2Be8rk14nIPbV76gqm9vakpOww17QM9wEh6acn0LTVthDOKvAvM0DRkXFUb67hlwZhv4vniutUcE1osKi2X0Qp%2B3%2Bv1XYdiaCsZ6S1KNXh4nIwoT32g9a9dieF%2F4qX53%2F1OIv%2FgU%3D%3C%2Fdiagram%3E%3Cdiagram%20name%3D%22Page%203%22%20id%3D%22GbP7lLlmJNy3qoYyyw-Q%22%3E7ZpdU%2BM2FIZ%2FTS7J2PJXfElCoGy3HWbotjO9YRRbcTQ4ltdWSNhf3yNbcixL1NBdlpQBwiR6JUvHOo%2BOjhwm3mJ7uKpwufmNpSSfICc9TLyLCUKu4%2FrwJpTHVglj1ApZRdNWco7CLf1G1JVS3dGU1FJrJc5YzmmpiwkrCpJwTcNVxfZ6szXLU00ocUYM4TbBuan%2BRVO%2BadVZ4Bz1XwjNNmpk15E1W6waS6He4JTte5K3nKBwgrwDnnjzidD0l7eoGOOjzVTj7WFBcjH5al7p0vWd3w%2Br6lO%2BxujX%2BJrl12etMZc%2FuNdulipS8J8%2BuiTqAec76TU54%2FxRuXHDtzl8cmG4B1JxCg7%2BjFckv2E15ZQVULdinLMtNMA5zYSQwL2QCoRctJzj5D6r2K5IFyxnVdOtt25%2Bep2ey2s5K0GtecXuO25Qp%2FR6cJyZc%2BmIGoWHKKS43pBUFqCmFLexPWRijU0pq6MpBeDr6a5uDJT3DzaQwwDbEYe4zwFx6JMrwraEV49QlsMFcpXLRe7FQVveH5dMKKVNb7UoDctFmnUdv4gSaCtB%2BbFceRauwhxsn68ZzGofsPDrjqmKs7qJYufQAEXlobFE1cOnTLzfchF3kOOpHuEe2k7begNg8Cw3%2BClYQWzArmmeD9pYFoBidUvTVAwz328oJ7clTsSYe2ANtIb4DsU3B831kEZa5BuguZ5vkha4J02ab5D2RazsDwisEHhoGmgU%2BKFjYuAgEwPPOWkMAgODP28WBgX1PeHJRjqD7XhOC4BBpT9ChH0ipeCKp91v87KIPzIBc5Eqy2Ft%2BxDe1%2F5UbIllM%2BR10myjZu3dQ5nYtr5ZFLtxaCfVvp8qxnOybtYB2E%2BL7HNTuvAcabNtCG1DfXuAI0fjF%2BKYwa8XWcIYisKTBjg0AL6ifLNbfUQyOwgo1EGwBTIl%2FY%2FiWDSekI9m4f%2FiYT0YdJhYYeqz06Tb8%2BUlsgWzb7uKTDPK7ypSCnMYzOYpEBLoW907Sa1n44SQIj0XB3jh4hzXNU10KmxLmaTGaf6V3dRzg3omoOWdUqtIjjl90I2z%2BeYlphwNumG0OZAoRlGshxWVNasRa7arEiKvegEQI%2BN2aXY37iBOcVxlhH%2FvuIAFfuz1Wor%2B6v%2FQoeS7c%2Bdbr4p4fFVoyZ%2B8cagI5vCCsRbtXwBNF0KZosAi2rTIFF2zGby5thGGok2LTNE1m4mSsloXbVoUmBYPr3YtV7uDq%2BH1RC49yCjh9xKcbmwsy4tIPPqzpLndMyItBx3d%2F5656fUC4lj%2Bjuuyva01PQg77Al9Rdrg0KbzcyjaEnsIZzWYd7ciuKg5zu9PYa8MQ%2B897pXqUXgvLCzb6Qdx3jngI8W2QxHM9D1Jnb16UEQWKNDJnLRuZn%2BEj1%2BvHr5cVXNv%2B%2FenmzPkn5lMGABYw9lrByFLTPGmCUvJakfFVy%2FDuBkF8aKJp088s3hzfnxHz6W8ODSDij%2B1hRX%2FpAlyDYIW4CYRUhpPfYQT%2B6ObOJhGw6ePM4OI2DV5OJ1Du5WHZ3yL9hOPZMhpzwpjIfC9Hd0gwdThUke5Vz66%2Bf4gzA2PjN93dHv9k1bTduQLc2XF8V8VvOU%2F%3C%2Fdiagram%3E%3Cdiagram%20name%3D%22Page%204%22%20id%3D%22fNIWJedymmZ7s61UN4_2%22%3E7Vtbc9o4FP41PMbj%2B%2BWxEJLtTHaXGWa7bV8ywhZGE4NcWwSSX7%2BSLTmWpcTJ5oJLaMkQfZJ1jn2%2BcxNk5EzW%2B8sC5Ks%2FcQKzkW0m%2B5FzPrJty7Rc%2BsaQuxrxI7sG0gIlNWQ%2BAHN0D8WVHN2iBJYcqyGCcUZQLoMx3mxgTCQMFAXeycuWOEskIAcpVIB5DDIV%2FRclZFWjoWc%2B4H9AlK6EZMvkM2sgFnOgXIEE71qQMx3Z%2Fsh29mDkjEcMk1%2FOpMCY9C4Ti9f7CczYwxfPNThbXU1N59sWTL6uv8%2F%2Fuvl7kZ%2FVyly88a7NUyrghny4dM6oW5BtudX4Eyd3wowrss7obxYVdwsLgqiBr8ACZjNcIoLwhs4tMCF4TReADKUMiOm9wIICGVs5BvFNWuDtJpngDBfVts6y%2Btfa9Au%2FluCcoiUp8E3DG7tBWjuYZmhemGxG0IMNElCuYMIHdCZnt7Hep8zHDITLwECU8KWxLSsF%2Bf1THeC%2BQ9seg1jPIWLXJpcQryEp7uiYi%2FO4l3MndyKvHu8eXMbn0KrlLQID3EnTZuMXsYSu5UR5W145Gl75GdV9vMT0qbYJ5v%2FaYjFxVlZR7AtdYAf5vtJEzNPfUvY%2BJyzu2KYrdqT3UG9azysEppYlCn82eAN1hF2iLOus0TiA4OoaJQkTM96tEIHzHMRM5o5yjWIV4xsqHpxolmNLTAtchWiW46pM86xBM81VmPYP8%2BwTCbQkcGzDk1jg%2BqZKA9NWaeCYg6aBp9Dg22yisKC8gSRecWPgLcnQhpJBlD8MpHkiQdQUj5tfZ2UWf3gBZtlizMXq8hDYla7BUmJeifwaV2lUnb2%2BzWNd6guDyIp8PVP1%2BVRwPIPLyg%2Bo%2FmiTXlWjc8fkOutESAn18AQOIom%2FtohqLf46gSaM2YE%2FaAL7CoEvEVltF6dIpieCLQLXE4FMQL9RHAv6C%2FLeKvwJC8vBoKGJlkxt7lTl9nh6YeuC2f22gEaKyHUBc6YOpk9zCAzx5FR3JKV12M8QuEm%2BsAaemTgDZYlimRU6V4aJ0s2%2Fs5laZhBnAlLdybECZoCgW1k5nW1eosqDQjOMqoZEcNSW84sr8ouQWOJtEUN%2B1QsI0SO3KbMbuZ04RUCRQvJauZQW4K61a872K%2F%2FHhpzfjTkP7RVRv1dIxR%2B%2FcTrhjemLyprUPx5dOmGIYXsaUIcFKmipy%2BibpZPQBXVYoIKWuoyNhNYyqMMCT9W4e7WludrqXE1fj9TSnYqS%2Fr%2BgRlcSy%2FQ8YEd%2FmjK3OSOSatDe%2FPfMpNcKiH31Oyjz%2BraWaM%2F00Bf0BayDQ13Oj%2BlQV9jTcFZS9a4XEGxKArKbIeRK33eOMVeKo%2FBWWJjWj5%2BC48YApxJbTwovlHNSYCqkCDSksIfdaVlWf67QxrP3jkKaoOIYMU7gYovYZy%2FdwBl40aQKqI8cWhycQK4pF1NO5KtRxTV0ccUdNoXUz00m1E4sqFSmOgUU%2FeFN5BlB9%2FwxVCgRWSohBt62W7oPPA7Xldlm3S70RsFja99okSnTS7Rz79y%2BuW4n0nXbxte1bwfstmBOLpY7gMpfc%2B9ndp%2Fez%2BIfZ2pZNfAMmqMcMnV%2BwyTqWXLEpCprSnNtEh1Mca4lkVqG8Rw6E8Y6pVE9I0xfZoSmWQuDIedQLR%2FUmuqpFKqaVLYStURx950NjNANBfCjAlzXF8D5vr3%2B%2FK49msEC0QfE2HQ6KFUOLDsfxDluR%2BI7ZVo%2FigzLszuyTSOKOl3ncWXcYdWXR0fmsEMo52PKRjvsfPsrNI%2BZxOp3dV5J4laQ96QQ%2F%2BHh%2FdN2XK4oRxvXCT%2FEdT5Zx%2FWM7wUcsetEx%2Bg5fiQfr39UBfXJPOdl35d4QVshuY3V4zZv6CGPN9PH5iGeENt4iHvykOd4SLW2509ghBYPf3zkTP8D%3C%2Fdiagram%3E%3Cdiagram%20name%3D%22Page%205%22%20id%3D%22evrxi7-8W0EKyl22oDAH%22%3E5Vpbd6M2EP41fgwHxP0xviTd093TtMlu26ccArKtY4woyJfk11cCCSMkx05qEm%2BdyzH6JCQx38xoZszAHi23t0WUz7%2FhBKYDYCbbgT0eAGAB16EfDHmuES8ENTArUFJD5g64Ry%2BQ3ynQFUpgybEaIhinBOUyGOMsgzGRsKgo8EYeNsVpIgF5NIMKcB9HqYr%2BiRIyr9HANXf4LxDN5mJly%2BQ9y0gM5kA5jxK8aUH2ZGCPCoxJfbXcjmDKhCfk8seXoQtHv78syvS3ML8Gv9rz5VU92c1bbmkeoYAZOe3UnMt1lK64vPizkmchwDlZpvTKGtjDNSwIoqL9Gj3B9A6XiCCc0b4nTAhe0gFRimYMiOlGYUGBlI0cRvFiVuBVloxwiotqWnta%2FbQmveb3EpxTtCQFXjSMgQZpzWCagXljsh5BDGskUTmHCW%2FQnpw9xnI7Y9ptIFz6BqKqVhqrstrgkaLlFLC9wm1LsbiobyFeQlI80yG8V5gNtxo7dOv2ZqeDHofmLfUTWMS1ftZMvGOWXnBy30C0rSHaS%2BmqwymmT95m3PtnhUXHVVkZ9DUdAPx8WwlM9NOrGfu8J8wEgemKGekG60nrfkWjqAiJQmiGM6jToClK084YjUYK5VmiJGHLDDdzROB9HsVszQ0ln2KVCja60Rfzlg0k6n1HYd6yHZV61%2BqJekeh%2FjvT%2FctixQaGK9HieKbKiwlUXmyzJ15chZcfdyOFlnIBSTzn0sErkqKMsiPOSgZS15YgKq79fOjEziyUn9YWEG2%2BrM51RpvSMZgXz6slv8SV51d7H9d5rPPWgR9aoadXHf0RIJQuhdNKMen%2BUTb7WrXGtsn3rFtCOgN60yg%2FlBQKCLtvKZTtawwd%2BF5PGuUpGnWLyHz1dGG2DoRpv2LqAvoQS%2FcPR1kHQ6tXRC6bS8Oblt02mVUMNZzcAJ25v6wKaMwQeSxgzraDqRx6pMyVvfOnx0vBYcpgllyzBIXJPI3KEsUyTf9F2WEiZTWq3FpycTWqLLACphFBazkX0gmLr3CHURUNNumf7OMc4ePEFCVeFTHkd7WTj85ETXTTTNSxNRIVM0iUiaiAo%2BfWsJwNKBV2G8G8n%2FDwMOHSUcx3QjvcIf2jjzOq%2F106dMQQA7gaUIf5Kmipw%2BiHpVuhC%2BowXwUtdRhriV3LoA7zXXXH3bstzd1W5276tyey6Zzv9PeGMdp1YpOxz7J2TdDRJJlSRHDQ1x7pYFu2fiiaisq8fqwp2rJ96MOrAtb2VAdXQ9rUhVnUpEu6vccnGGUlidJFj37Z8%2Bzz8suirNSy00ktDwoOG4lcVsDjuYHsXX014PE1LIG%2BAlHLUlhSKNFafN92qjE724hxAp9WiBUWu67Fd8NR5XL2JFl9MeqY8sFrh55qd46hszynL07VWuGICo6ZXSW7yzI56ggNv1tRCBSOQktlqLc0w9IV%2BT4waK1juCPcwplEtzSgkAkU0e5bo1vH6VhrN0zeE92eKna11BLfmbvbHOWQbed8PK5rydZMd6KJdLQet7dYR60Qco97J8R3WU7XNT2ZI000Gvgf6XHVittrHlcVsiw3Kq7i%2BS%2FWMAInEMDfFeA4ngDG2%2Fb48XO7dQcLRJ%2BN8fvzlh1Ap7RqO50pjnXMXhgalgs6k5lGGHYi374d9BEVwAsoJ4GgQ4X9zgMXBJ2vV4Pjykkn4%2FPk5cGW6buS4fdv9D9b2OaIk7nRouB9WvTpYdsRNcf%2FjxaFZ6VEXiiXTN59xHy2EgG1IHaiEETSIOuABp3a5bhnpS2umKfRFufstSV8iR%2Byh%2Bnkdr4ovl%2FBx%2Bj%2B4fbqCGU5%2FMLBvrL8noytk%2BBVw8f7kpSzK9RX3%2FPAYrKG9dc9e9Jap%2FcXymw592EFqI%2BrxWuVSS3yfouyVcTuu87zAq%2FZ5WUlqFanoqQpCVqWxk%2BdIkPVcgROHWK839G%2F5pDOxc973cSz454%2F38%2FT5u6V43r47sVte%2FIv%3C%2Fdiagram%3E%3C%2Fmxfile%3E#%7B%22pageId%22%3A%22AiMyjcBlQRH93MUG0xyu%22%7D'"
+                        >
+                        Design
+                    </button>
+                </div>
+            </div>
+            <div class="details-container">
+                <div class="article-container">
+                    <img
+                    src="./Polly.png"
+                    alt="Polly"
+                    class="project-img"
+                    />
+                </div>
+                <h2 class="education-sub-title project-title"> Polly P</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn"
+                        onclick="location.href='https://github.com/trevianwalton14/Polly-Powered-Audio-Narrator?tab=readme-ov-file'"
+                        >
+                        Github
+                    </button>
+                    <button class="btn btn-color-2 project-btn"
+                        onclick="location.href='//viewer.diagrams.net/?tags=%7B%7D&lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=TextToSpeech&dark=0#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1elLvNFNEUweHbse9Ay57DAEZIalIS4Jb%26export%3Ddownload#%7B%22pageId%22%3A%22jRWXA9nf_T-IjguLEbsI%22%7D'"
+                        >
+                        Design
+                    </button>
+                </div>
+            </div>
+              <div class="details-container">
+                <div class="article-container">
+                    <img
+                    src="./Multi-AZ-screenshot.png"
+                    alt="Multi-AZ-screenshot"
+                    class="project-img"
+                    />
+                </div>
+                <h2 class="education-sub-title project-title"> Multi-AZ VPC + EC2 Scaling + ALB(Terraform Project)</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn"
+                        onclick="location.href='https://github.com/trevianwalton14/Multi-AZ-VPC-EC2-Scaling-ALB-Terraform-Project-/tree/main'"
+                        >
+                        Github
+                    </button>
+                    <button class="btn btn-color-2 project-btn"
+                        onclick="location.href='https://viewer.diagrams.net/?tags=%7B%7D&lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=Multi-AZ.drawio&dark=auto#R%3Cmxfile%3E%3Cdiagram%20name%3D%22Page-1%22%20id%3D%22QuR11kjVX5-r3tTapFmE%22%3E7Vxtc%2BI2EP41fAxjSZZtPgIJ1%2Btc20zTub58yRisgHvGprYg0F9fyZbAeiFwOUSugSQzQWtbFvs8u9Kute6g4Xz9oYwXs5%2BKhGQd6CXrDrrtQAg8L2D%2FuGTTSMKeEEzLNGlE3k7wkP5L5JVCukwTUglZI6JFkdF0oQonRZ6TCVVkcVkWz%2BppT0WWKIJFPCXKMLjgYRJnxDjt9zShs0Ya4dbZP5B0OpN3Zt%2B4OTKOJ1%2BmZbHMxf3yIifNkXksuxGnVrM4KZ5bInTXQcOyKGjzab4ekoyrVdXYaM%2FR7ZBLktNjLhjOP%2F80yB9ubouA%2BPDh6cf7cH4jelnF2VKo4vP9UIyXbqR6FkWa01rFeMD%2B2H2GXgezI0Pe6kKsCfR2qAqA2eJ9qAK9HaoCoHcPtPsDfYAtgdFSuve0%2B3utAbI%2FNCiWNEtzMtyS0WPCaRknKYNiWGRFyWQ1E9BgRucZawH28XmWUvKwiCdcq8%2FMkJjsqcipMAcAZVsonvfKCE9jdq9S9FEjQcq7FWkAac7JsnhRpePtVSWZLMsqXZFfSdV0zqWMgAv%2Beb6ecivuxs%2BV3%2BXkXdTD%2F8juZT36uFpM%2BNgqWhZfiPx%2BHYiioT8ajfio0yzTvveKlDRlBtbP0invlhb8LrFoZeSJ8h6ZMtJ8%2Bqlu3SJPKKB1i35%2FEA4iJk%2FiakYS8U1M6kses7uSdUskTOEDKeaElht2ijiKUHPFRjqisGk%2Ft8wfiV5nLdPv%2BVi4HeFyptuud7bHPgjz%2BwpTRIYpdmCQcTWN2Ycprb93I%2BBKUiw0%2BGdZyAM3DeR9dgLAi3VzmTguOwJet%2F5lAwWB7JU1mo7VmzFxawCaZ2DapodZrjJHMMRCGkmPCeEkt7BoniYJv%2FWgdrkv8OFFZ3c8STAwWAEQNlmBXJEitJBCg8DqjRRzkVr8FI9Jdl9UKU1rUx8XlBbzg8a6RaOFssWXoG7tmnJCH6cxJc%2FxRgOZmfMIRxj5%2B72lMyB7vmLuPjRwxb4JK3YFa2TA2l%2FFaRaP0yylfNx%2FbdcRLaQtFmP45AH22E%2BbAWAvwPpko%2Fle4Id3g%2F4ek25xwRlonoJZz%2FTQCPVM0IIQOUINmC76CpsBmx%2BFXaxNrp4JHYxs0AWuoPMN6D4Kb8WkH4S%2FutDZTRoYMic7H1kmO88RSNCMRgxIVNUcoHjGJ7xBUSakbBmI54XY8zRDApbFuGKLhsl63mjkucQHQwUeGJhWBHuWJSpAoSuA4IkBemsNg0hTMTZVHFlV7MpRQVsY8C0qNrQaBANYR23OtKrO237kW3hrWURDZxM3NL3%2F%2F0%2Bp2go2slD1zFrFh7VafSF0MhNKtUYq2uqF%2FY74GPZFCFpAsU1BWCdh11HQoexNXC2aL%2FqUrvk4jPTNnlDK78aLRcbGwof4mBVx8jiOszif1ANwth7oQX3hhnsGyXBocgw7m3CCwxQjyZRIpQvci5LOimmRM7ALDmKt578JpRuBVrykhQqlav5Ms%2BXmD95gGhHNP9vHbtdKa%2FOqpVpVLMsJOcLCaFxOyUsdypUT18WLULfXdnJVXpKMEW2lpsJtUIru7jmJd7SBUaB6Jg%2BqXTRfU1zVTlBrHaFDHTVqMDrqlyVfu29PE9nqvQMGPXXWBxHUiNr0uKPtVoHfwOQjMjlXJu%2BWmG%2FBZN9Tk8LQ0%2FzasUyGnrauDLWQ6URMDqR%2FlkwW4YBbJluSV7vZih34xOYr9m8gZ6wLi6pDpM2iEJpLNdtKzV1c3TMQu1%2BOGWJM9rAc54Ru7fhSUMKHA7%2BeJbfoDCLZ8QsQmfPFO4cI4IMYbT3%2FeUAy81P3ZbqKKbkakgBpG6YqIJ3T2SEzR2WAdOmmZEOpZ3n%2B5Qwk%2F9SZXiMhMxoNcGg8UHGl4ACq%2BpVW0U7OhJZUOohcRc7IXKV10MhQspKfsW7zsW71sW33sW75Mbf9KKfVG3Esd9CFNlloCoF5mty7YwptMttGJf1qYLkaaFfv3ya0L92l5bXubkNQp74NYj%2FVP99jcsuayCpJEzQ1u4sGrGnbZ0TqDUaurDNSoyRsSZ0GlikqcPX0Hx2RC7ga5tUw371hbvdNfS%2BW6Tt%2F%2BnbedQmG6rO4r1iYRK5UbEa6V%2Bd3dX6X5%2Fww%2Ft6WJWaa8GqZV8u8PMsMPe%2F7sky5XbllmXdDLujzp3%2FQ45VMaT5lnz7U5RyXld0CUM1Bhp65awH4gYmXu%2FSWud%2Foitdu4usFR%2BBl2XXnDi9zJ9PvZMyBIuXq4p5ghio8gSVmCM9qTeYmoAtGh9mP9nzZBlB01my%2Bmc%2B6YIAw9o4BCJ4TIPNhwAUDpC%2FvAmw%2BDQst1Snu4Dki8ErndQm7ZUspKVM2jLpCmN0rXVTkfidqY2jgsK1INyoGRWHub%2FWWM8QE4va36ZytWkZZysgziid8r9VjkpZsRAXXw2hbATjJimXSrVZTlw%2FdkLrui5BZIWbbxBHArrMKCWxmtz7mVBYaXZSZBVpyN8KBCY9lM7EzM5PlTtf96p2T71fP43bVr7O1j1YEEaGo%2B8ahuSzSapHq5%2F5vnUutKYSeWlMY9Uyjj865Zwsf8URHzWPevnrW1IvdR0HfkpOTJcC6GbFJNR7HYuYcxxU391lRUYdoAb3E0FICaluourMmM3EyaDTBhD%2F8Ul3aHAp81eGhwHwhhW3jltzxe3qAjinIyZM%2BfycT12MWV1U66bxUoLBOqahPQIFo8wIF0PU92d7VKPDGptVoLXVdlC1IPh4uWxCG8zVlC9jiB6XsGysZkJbDwUgrAjy2ksGHWk1OpHW0p5LhVMUG%2BJiymdfyrc22l5nWKqKBfqddRtP1erDzcilN3XJMVKmWw0T1r0R1QdTADPxOR9SgTVWv24vQWzvG90ojHGkRRhCdl0ZmOPGNNDr1jAiOdDQS2ffGkDd3NEdkMdzPiCdmlXzAfZhVryh0vrLqCFaZYfKyuiEs9roBscGvdx50BWoOAwAz6ArOmcMIzKh4C874wsAJtFf2AGAmmM4KzhGvlnlXz25e8VoRFsqrqyr5Nrb2hg8AusCSatIr50%2BXybDgdqK3qxrvbd29as72StU9b1%2F9n5j1V%2FPBB6FCBmSS4UQGzJq712s3M%2BXu9eXo7j8%3D%3C%2Fdiagram%3E%3C%2Fmxfile%3E#%7B%22pageId%22%3A%22QuR11kjVX5-r3tTapFmE%22%7D'"
+                        >
+                        Design
+                    </button>
+                </div>
+            </div>
+            <div class="details-container">
+                <div class="article-container">
+                    <img
+                    src="./Polly.png"
+                    alt="Polly"
+                    class="project-img"
+                    />
+                </div>
+                <h2 class="education-sub-title project-title"> Polly P</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn"
+                        onclick="location.href='https://github.com/trevianwalton14/End-to-End-Data-Engineering-Pipeline'"
+                        >
+                        Github
+                    </button>
+                    <button class="btn btn-color-2 project-btn"
+                        onclick="location.href='https://lucid.app/lucidchart/59fed51c-4985-4cd5-9b91-92494e4a1604/view'"
+                        >
+                        Design
+                    </button>
+                </div>
+            </div>
+        </div>
+          <img
+        src="./downarrow.png"
+        alt="downarrow"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+        />
+    </section>
+    <section id="contact">
+        <p class="section_text_p1">Get in Touch</p>
+        <h1 class="title"> Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img
+                src="./mail-symbol.jpg"
+                alt="mail-symbol"
+                class="icon contact-icon linkedin-icon"
+                />
+                <p><a href="mailto:trevian.walton@outlook.com">trevian.walton@outlook.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img
+                src="./linkedinLogo.png"
+                alt="linkedinLogo"
+                class="icon contact-icon"
+                />
+                <p><a href="https://www.linkedin.com/in/trevian-walton-136289237/">Linkedin</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyyright &#169; 2025 Trevian Walton. All Rights Reserved</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
